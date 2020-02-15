@@ -173,7 +173,7 @@ pre_config_wizard() {
 
 	# Reinstall
 	if [ -f /usr/bin/velesctl ]; then
-		reinstall_msg="Choose <Next> to reinstall existing Veles Core Masternode on this system. The process will also: reset Veles Core configuration"
+		reinstall_msg="Choose <Yes> to reinstall existing Veles Core Masternode on this system. The process will also: reset Veles Core configuration"
 
 		if ps aux | grep "/velesd" | grep -v grep > /dev/null; then
 			reinstall_msg="${reinstall_msg}, and stop all running velesd instances."
